@@ -177,12 +177,38 @@
 
 # # ===== 6 1 se 20 tak numbers ki list banao aur list comprehension se sirf even numbers ki new list banao. =====
 
-list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-even_list = []
+# list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# even_list = []
 
-for i in list:
-    if(i%2 == 0):
-        even_list.append(i)
+# for i in list:
+#     if(i%2 == 0):
+#         even_list.append(i)
 
-print(even_list)
+# print(even_list)
 
+
+
+# # Day 3 practical challenge ===============================================
+# 1. List comprehension use karni hai.
+# 2. Salary ₹40,000 se zyada honi chahiye.
+# 3. Sirf selected employees ka name aur salary print karna hai.
+
+employees = [
+    {"id": 101, "name": "Abhinav", "salary": 50000},
+    {"id": 102, "name": "Sahil", "salary": 30000},
+    {"id": 103, "name": "Kaushik", "salary": 45000},
+    {"id": 104, "name": "Dinesh", "salary": 25000},
+    {"id": 105, "name": "Sumit", "salary": 60000}
+]
+
+selected_emp = []
+
+for emp in employees:
+    if(emp["salary"] > 40000):
+        selected_emp.append({
+            "name": emp["name"],
+            "salary":emp["salary"]
+        })
+
+
+print(selected_emp)
