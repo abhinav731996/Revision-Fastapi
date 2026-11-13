@@ -15,19 +15,19 @@
 # # __init__() Constructor ----------------------------------------
 # # Maan lijiye hume employee object create karte time hi uska ID, name aur salary set karni hai.
 
-class Employee():
+# class Employee():
 
-    def __init__(self, employee_id, name, salary):
-        self.employee_id = employee_id
-        self.name = name
-        self.salary = salary
+#     def __init__(self, employee_id, name, salary):
+#         self.employee_id = employee_id
+#         self.name = name
+#         self.salary = salary
 
 
-emp1 = Employee(101, "Abhinav", 55000)
+# emp1 = Employee(101, "Abhinav", 55000)
 
-print(emp1.employee_id)
-print(emp1.name)
-print(emp1.salary)
+# print(emp1.employee_id)
+# print(emp1.name)
+# print(emp1.salary)
         
 
 
