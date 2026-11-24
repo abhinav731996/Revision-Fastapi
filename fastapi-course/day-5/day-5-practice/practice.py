@@ -126,7 +126,7 @@
 
 #         print("----------------------------------")
 
-# ac1 = BankAccount("abhinav", 50000)
+# ac1 = BankAccount("sahil", 50000)
 # ac1.get_balance()
 # ac1.deposit(2000)
 # ac1.withdraw(500)
