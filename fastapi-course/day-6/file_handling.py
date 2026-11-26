@@ -75,18 +75,72 @@ import json
 # json.loads()	JSON string → Python data
 
 
-import json
+# import json
 
-employee = {
-    "name" : "Abhinav",
-    "salary" : "55000"
-}
+# employee = {
+#     "name" : "Abhinav",
+#     "salary" : "55000"
+# }
 
-json_string = json.dumps(employee)
+# json_string = json.dumps(employee)
 
-print(json_string)
+# print(json_string)
 
-read_data = json.loads(json_string)
+# read_data = json.loads(json_string)
 
-print(read_data["name"])
+# print(read_data["name"])
+
+
+
+# # basic type k hints ---------------------
+# def calculat_salary(salary:float, bonus:float) -> float:
+#     total = salary + bonus
+#     return total
+
+# result = calculat_salary(50000, 11000)
+
+# print(result)
+
+
+
+# # different type k hints --------------------
+# name:str = "Abhinav"
+# age:int = 29
+# salary:float = 55000.50
+# is_active:bool = True
+# skills:list[str] = ["python", "fastapi", "sql"]
+# employee:dict[str, str | int] = {
+#     "id": 101,
+#     "name":"Abhinav"
+# }
+
+
+
+
+# # Function & return type --------------------
+# def check_enoloyee(age:int) -> str:
+#     if age >= 18:
+#         print("Eligible")
+
+#     else:
+#         print("not eligible")
+
+
+# result = check_enoloyee(22)
+# print(result)
+
+
+
+
+# # Optional return value
+
+def find_employee(employee_id:int) -> str|None:
+    empployee = {
+        101:"abhinav",
+        102:"sahil"
+    }
+    return empployee.get(employee_id)
+
+result = find_employee(101)
+print(result)
 
